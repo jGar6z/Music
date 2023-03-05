@@ -1,0 +1,847 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body {
+    background-color: #f4eeee;
+}
+
+/*Universal*/
+.title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #000;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000;
+    color: #FFF;
+    transition: 300ms;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo ion-icon {
+    font-size: 26px;
+    color: #000;
+}
+
+.logo h1 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+}
+
+/*Header*/
+header {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 5rem;
+}
+
+header #menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4vw;
+}
+
+header #menu a {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    margin: 0 1vw;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+/*Main*/
+.main {
+    display: flex;
+    background: linear-gradient(53deg, rgba(255,217,182,1) 0%, rgba(255,238,225,1) 100%);
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 80px;
+    padding-bottom: 28px;
+}
+
+.main .main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 40%;
+}
+
+.main .main-text a {
+    font-weight: 500;
+    color: #005bbb;
+    width: max-content;
+}
+
+.main .main-text .btns {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.main .main-text .btn {
+    background-color: #005bbb;
+}
+
+.main .main-text .help {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.main .main-text .help ion-icon {
+    font-size: 22px;
+}
+
+.main .main-text .help h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.main .main-text .main-listeners {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.main .main-listeners img {
+    width: 120px;
+}
+
+.main .main-listeners h2 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.main .main-img {
+    width: 500px;
+}
+
+/*Creators*/
+.creators {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 78px 36px;
+    gap: 72px;
+}
+
+.creators .creators-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 45%;
+    gap: 10px;
+}
+
+.creators .creators-text .btn {
+    margin-top: 5px;
+    width: max-content;
+}
+
+.creators .creators-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+    margin: 0 62px;
+}
+
+.creators .creators-section .creators-container {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.creators .creators-container-first {
+    background-color: #e85d04;
+}
+
+.creators .creators-container-second {
+    background-color: #f48c06;
+}
+
+.creators .creators-container-third {
+    background-color: #ffba08;
+}
+
+.creators .creators-container img {
+    height: 260px;
+    position: absolute;
+    align-self: flex-end;
+}
+
+.creators .creators-container .creators-container-text {
+    padding: 15px;
+    margin-left: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.creators .creators-container-text .subtitle {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.creators .creators-container-text .btn {
+    width: max-content;
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+/*Unique*/
+.unique {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 78px 6vw;
+    gap: 50px;
+}
+
+.unique .unique-text {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.unique .unique-text .title {
+    padding: 15px 0;
+}
+
+.unique .unique-text .txt {
+    padding-bottom: 15px;
+}
+
+.unique .unique-text .unique-text-list {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 0;
+}
+
+.unique .unique-text-list ion-icon {
+    font-size: 18px;
+    color: #1ED760;
+}
+
+.unique .unique-text .btn {
+    margin-top: 20px;
+    width: max-content;
+    background-color: #546eaa;
+}
+
+.unique .unique-img {
+    width: 300px;
+}
+
+/*Steps*/
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 72px;
+    margin-bottom: 130px;
+}
+
+.steps .steps-text {
+    width: 45%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.steps .steps-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+    width: 80%;
+    height: 100%;
+}
+
+.steps .steps-div .steps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.steps .steps-container ion-icon {
+    color: #000;
+    background-color: rgb(30, 215, 96);
+    border: 10px solid rgb(114, 242, 159);
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.steps .steps-container h1 {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+/*Login*/
+.login {
+    padding: 72px 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .login-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1ED760;
+    border-radius: 20px;
+    width: 85%;
+}
+
+.login-container .login-container-text {
+    margin-right: 400px;
+    padding: 36px 62px;
+}
+
+.login .login-container-text .title {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.login-container .btn {
+    background-color: #000;
+    color: #FFF;
+    margin-top: 20px;
+}
+
+.login-container .login-container-img {
+    width: 400px;
+    position: absolute;
+    align-self: flex-end;
+    right: 180px;
+}
+
+/*Plans*/
+.plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 78px 36px;
+}
+
+.plans .title {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.plans .plans-options {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.plans .plans-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #FFF;
+    border: 2px solid #6d6d6d;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.plans .plans-container .plans-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.plans .plans-price h2 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.plans .plans-price h1 {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.plans .plans-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.plans .plans-container p {
+    color: #6d6d6d;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.plans .plans-container .btn {
+    margin: 0 30px;
+    margin-top: 20px;
+    background-color: #6d6d6d;
+}
+
+/*Subscribe*/
+.subscribe {
+    margin: 78px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe .subscribe-container {
+    background-color: #878a8f;
+    width: 75%;
+    padding: 25px 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.subscribe .subscribe-container .subscribe-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 50%;
+}
+
+.subscribe .subscribe-content form {
+    background-color: #FFF;
+    border-radius: 5px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    padding-left: 15px;
+}
+
+.subscribe .subscribe-content form input {
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    width: 100%;
+    margin-right: 5px;
+}
+
+.subscribe .subscribe-content .subscribe-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.subscribe .subscribe-content .subscribe-btn:hover {
+    background-color: #f4eeee;
+}
+
+.subscribe .subscribe-content .title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.subscribe .subscribe-container img {
+    width: 150px;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 78px;
+    gap: 78px;
+}
+
+footer .footer-main .footer-main-div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer .footer-main-div .logo {
+    margin-bottom: 5px;
+}
+
+footer .footer-main .footer-main-div-smaller {
+    width: 40%;
+}
+
+footer .footer-main-div h2 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+footer .footer-main .footer-social-media {
+    flex-direction: row;
+    gap: 10px;
+    width: 40%;
+    height: max-content;
+}
+
+footer .footer-social-media ion-icon {
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+footer .footer-copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+/*Responsive PC*/
+@media screen and (min-width: 1024px) {
+    /*Main*/
+    .main .main-text a:hover {
+        color: #000;
+    }
+
+    .main .main-text .btn:hover {
+        background-color: #000;
+    }
+
+    .main .main-text .help:hover h2, .main .main-text .help:hover ion-icon {
+        color: #005bbb;
+    }
+
+    /*Unique*/
+    .unique .unique-text .btn:hover {
+        background-color: #000;
+    }
+
+    /*Plans*/
+    .plans .plans-container .btn:hover {
+        background-color: #000;
+    }
+
+    /*Footer*/
+    footer .footer-social-media ion-icon:hover {
+        background-color: #fff;
+    }
+}
+
+/*Responsive Smartphone*/
+@media screen and (max-width: 767px) {
+    /*Universal*/
+    .title {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /*Header*/
+    header {
+        box-sizing: border-box;
+        height: 70px;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        justify-content: space-between;
+    }
+
+    header #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        left: 0;
+        background: #49474C;
+        border-top: 0.4px solid #878a8f;
+        transition: 0.6s;
+        z-index: 10000;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    header #menu a {
+        display: block;
+        padding: 1rem 0.5rem;
+        margin: 0 1rem;
+        border-bottom: 0.4px solid #878a8f;
+    }
+
+    header #btn-mobile {
+        color: #FFF;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+
+    #hamburger {
+        border-top: 2px solid #FFF;
+        width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #FFF;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    /*Main*/
+    .main {
+        flex-direction: column;
+    }
+
+    /*Creators*/
+    .creators {
+        padding: 42px 28px;
+        gap: 36px;
+    }
+
+    .creators .creators-text {
+        width: 90%;
+    }
+
+    .creators .creators-section {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .creators .creators-container {
+        width: 100%;
+    }
+    
+    .creators .creators-container img {
+        height: 200px;
+    }
+
+    .creators .creators-container .creators-container-text {
+        margin-left: 140px;
+    }
+
+    .creators .creators-container .subtitle {
+        font-size: 20px;
+    }
+
+    .creators .creators-container p {
+        font-size: 14px;
+    }
+
+    /*Unique*/
+    .unique {
+        flex-direction: column;
+        margin: 42px 28px;
+    }
+
+    .unique .unique-text {
+        width: 100%;
+    }
+
+    .unique .unique-text .unique-text-list {
+        gap: 10px;
+    }
+
+    .unique .unique-text ion-icon {
+        min-width: 20px;
+        font-size: 20px;
+    }
+
+    .unique .unique-img {
+        width: 250px;
+    }
+
+    /*Steps*/
+    .steps {
+        margin: 42px 28px;
+    }
+
+    .steps .steps-text {
+        width: 100%;
+    }
+
+    .steps .steps-div {
+        flex-direction: column;
+    }
+
+    /*Login*/
+    .login {
+        padding: 42px 28px;
+    }
+
+    .login .login-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .login .login-container .login-container-text {
+        margin-right: 0;
+        text-align: center;
+        padding: 34px;
+    }
+
+    .login .login-container .login-container-img {
+        width: 300px;
+        right: auto;
+        position: relative;
+        align-self: auto;
+    }
+
+    /*Plans*/
+    .plans {
+        padding: 42px 28px;
+    }
+
+    .plans .plans-options {
+        flex-direction: column;
+    }
+
+    .plans .title {
+        width: 90%;
+    }
+
+    /*Subscribe*/
+    .subscribe {
+        margin: 62px 28px;
+    }
+
+    .subscribe .subscribe-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 28px;
+        gap: 22px;
+    }
+
+    .subscribe .subscribe-container .subscribe-content {
+        width: 100%;
+    }
+
+    .subscribe .subscribe-content form {
+        width: 100%;
+    } 
+
+    /*Footer*/
+    footer {
+        margin-top: 42px;
+    }
+
+    footer .footer-main {
+        margin: 0 28px;
+    }
+
+    footer .footer-main {
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    footer .footer-main .footer-main-div {
+        width: 100%;
+    }
+
+    footer .footer-main .footer-social-media {
+        gap: 15px;
+    }
+
+    footer .footer-social-media ion-icon {
+        padding: 7px;
+        font-size: 20px;
+    }
+}
